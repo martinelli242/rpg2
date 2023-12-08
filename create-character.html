@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script source = "scripts/characterCreation.js" defer></script>
+    <title>Character Creation</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Character Creation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- General Section -->
+        <form action="savecharacter.php" method="post">
+        <div class="general">
+            <h2>General Information</h2>
+                <!-- General Inputs: Name, Archetype, Tier -->
+                <label class="text" for="characterName">Name:</label>
+                <input type="text" name="characterName" required>
+
+                <label class="text" for="characterArchetype">Archetype:</label>
+                <input type="text" name="characterArchetype" required>
+
+                <label class="text" for="characterTier">Tier:</label>
+                <input type="text" name="characterTier" required>
+        </div>
+        <container class = "abilities">
+            <!-- Attributes and Traits Section -->
+            <div class="attributesAndTraits">
+                <h2>Attributes</h2>
+                    <label class="text" for="characterStrength">Strength:</label>
+                    <input type="number" name="characterStrength" value="0" required><br>
+
+                    <label class="text" for="characterToughness">Toughness:</label>
+                    <input type="number" name="characterToughness" value="0" required><br>
+
+                    <label class="text" for="characterAgility">Agility:</label>
+                    <input type="number" name="characterAgility" value="0" required><br>
+
+                    <label class="text" for="characterInitiative">Initiative:</label>
+                    <input type="number" name="characterInitiative" value="0" required><br>
+
+                    <label class="text" for="characterWillpower">Willpower:</label>
+                    <input type="number" name="characterWillpower" value="0" required><br>
+
+                    <label class="text" for="characterIntellect">Intellect:</label>
+                    <input type="number" name="characterIntellect" value="0" required><br>
+
+                    <label class="text" for="characterFellowship">Fellowship:</label>
+                    <input type="number" name="characterFellowship" value="0" required><br>
+
+                    <h2> Traits</h2>
+                    <label class="text" for="characterDefence">Defence:</label>
+                    <input type="number" name="characterDefence" value="0" required><br>
+
+                    <label class="text" for="characterResilience">Resilience:</label>
+                    <input type="number" name="characterResilience" value="0" required><br>
+
+                    <label class="text" for="characterDetermination">Determination:</label>
+                    <input type="number" name="characterDetermination" value="0" required><br> 
+
+                    <label class="text" for="characterWounds">Max Wounds:</label>
+                    <input type="number" name="characterWounds" value="0" required><br>
+
+                    <label class="text" for="characterShock">Max Shock:</label>
+                    <input type="number" name="characterShock" value="0" required><br>
+
+                    <label class="text" for="characterSpeed">Speed:</label>
+                    <input type="number" name="characterSpeed" value="0" required><br>
+
+                    <label class="text" for="characterConviction">Conviction:</label>
+                    <input type="number" name="characterConviction" value="0" required><br>
+
+                    <label class="text" for="characterResolve">Resolve:</label>
+                    <input type="number" name="characterResolve" value="0" required><br>
+
+                    <label class="text" for="characterCorruption">Corruption:</label>
+                    <input type="number" name="characterCorruption" value="0" required><br>
+
+                    <label class="text" for="characterPAwareness">Passive Awarness:</label>
+                    <input type="number" name="characterPAwareness" value="0" required><br>
+
+                    <label class="text" for="characterInfluence">Influence:</label>
+                    <input type="number" name="characterInfluence" value="0" required><br>
+
+                    <label class="text" for="characterWealth">Wealth:</label>
+                    <input type="number" name="characterWealth" value="0" required><br>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h2>Skills</h2>
+                    <div class="form-group">
+                        <label class="text" for="characterAthletics">Athletics (Str):</label>
+                        <input type="number" name="characterAthletics" value="0" required><br>
+                      
+                        <label class="text" for="characterAwareness">Awareness (Int):</label>
+                        <input type="number" name="characterAwareness" value="0" required><br>
+                      
+                        <label class="text" for="characterBallisticSkill">Ballistic Skill (Agi):</label>
+                        <input type="number" name="characterBallisticSkill" value="0" required><br>
+                      
+                        <label class="text" for="characterCunning">Cunning (Fel):</label>
+                        <input type="number" name="characterCunning" value="0" required><br>
+                      
+                        <label class="text" for="characterDeception">Deception (Fel):</label>
+                        <input type="number" name="characterDeception" value="0" required><br>
+                      
+                        <label class="text" for="characterInsight">Insight (Fel):</label>
+                        <input type="number" name="characterInsight" value="0" required><br>
+                      
+                        <label class="text" for="characterIntimidation">Intimidation (Wil):</label>
+                        <input type="number" name="characterIntimidation" value="0" required><br>
+                      
+                        <label class="text" for="characterInvestigation">Investigation (Int):</label>
+                        <input type="number" name="characterInvestigation" value="0" required><br>
+                      
+                        <label class="text" for="characterLeadership">Leadership (Wil):</label>
+                        <input type="number" name="characterLeadership" value="0" required><br>
+                      
+                        <label class="text" for="characterMedicae">Medicae (Int):</label>
+                        <input type="number" name="characterMedicae" value="0" required><br>
+                      
+                        <label class="text" for="characterPersuasion">Persuasion (Fel):</label>
+                        <input type="number" name="characterPersuasion" value="0" required><br>
+                      
+                        <label class="text" for="characterPilot">Pilot (Agi):</label>
+                        <input type="number" name="characterPilot" value="0" required><br>
+                      
+                        <label class="text" for="characterPsychicMastery">Psychic Mastery (Wil):</label>
+                        <input type="number" name="characterPsychicMastery" value="0" required><br>
+                      
+                        <label class="text" for="characterScholar">Scholar (Int):</label>
+                        <input type="number" name="characterScholar" value="0" required><br>
+                      
+                        <label class="text" for="characterStealth">Stealth (Agi):</label>
+                        <input type="number" name="characterStealth" value="0" required><br>
+                      
+                        <label class="text" for="characterSurvival">Survival (Wil):</label>
+                        <input type="number" name="characterSurvival" value="0" required><br>
+                      
+                        <label class="text" for="characterTech">Tech (Int):</label>
+                        <input type="number" name="characterTech" value="0" required><br>
+                      
+                        <label class="text" for="characterWeaponSkill">Weapon Skill (Ini):</label>
+                        <input type="number" name="characterWeaponSkill" value="0" required><br>
+                      </div>
+                      
+            </div>
+        </container>
+        <div class="skills" >
+            <h2>Background Story</h2>
+            <textarea class="text" name="characterBackground" rows="10" cols="75"></textarea>
+        </div>
+        </div>
+        <button class="submit" type="submit">Save Character</button>
+    </form>
+</body>
+</html>

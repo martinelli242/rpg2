@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Boltpistol",
+        "description": "Human fitted Boltpistol, shreds armor and flesh alike",
+        "stats":"DMG: 10+1 ED | AP 0 | 6 | 12 | 18 | Salvo 1 | Brutal, Pistol",
+        "keywords":"Imperium, Bolt",
+        "photoURL": "items/boltpistol.png"
+    },
+    {
+        "name": "Heavy Boltpistol",
+        "description": "Primaris fitted Boltpistol, shreds armor and flesh alike, but a bit better",
+        "stats":"DMG: 10+1 ED | AP -1 | 6 | 12 | 18 | Salvo 1 | Brutal, Pistol",
+        "keywords":"Adeptus Astartes, Imperium, Primaris, Bolt",
+        "photoURL": "items/boltpistol.png"
+    },
+    {
+        "name": "Bolter",
+        "description": "Human fitted Bolter with stock to lower recoil",
+        "stats":"DMG: 10+1 ED | AP 0 | 12 | 24 | 36 | Salvo 2 | Brutal, Rapid Fire(2)",
+        "keywords":"Imperium, Bolt",
+        "photoURL": "items/bolter.png"
+    },
+    {
+        "name": "Boltgun",
+        "description": "Primaris version of bolter, a bit better",
+        "stats":"DMG: 10+1 ED | AP -1 | 15 | 30 | 45 | Salvo 2 | Brutal, Rapid Fire(2)",
+        "keywords":"Adeptus Astartes, Imperium, Primaris, Bolt",
+        "photoURL": "items/bolter.png"
+    },
+    {
+        "name": "Assault bolter",
+        "description": "Bolter, just different",
+        "stats":"DMG: 12+2 ED | AP -1 | 9 | 18 | 27 | Salvo 3 | Brutal, Rapid Fire(2), Assault",
+        "keywords":"Adeptus Astartes, Imperium, Primaris, Bolt",
+        "photoURL": "items/bolter.png"
+    },
+    {
+        "name": "Stormbolter",
+        "description": "Two bolters put together for more firepower",
+        "stats":"DMG: 10+1 ED | AP -1 | 12 | 24 | 36 | Salvo 2 | Brutal, Rapid Fire(3), Heavy(3)",
+        "keywords":"Imperium, Bolt",
+        "photoURL": "items/stormbolter.png"
+    }
+]

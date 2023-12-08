@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Campaign - Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/tabsscript.js" defer></script>
+    <script src="scripts/loadFile.js"></script>
+</head>
+<body>
+    <a href="create-character.html">
+        <button>Create Your Character</button>
+      </a>
+    <header class="header">
+        <h1>Planets</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="tab-container">
+            <button class="tab" onclick="openTab('tab1')">Avachrus</button>
+            <button class="tab" onclick="openTab('tab2')">Nethreus</button>
+            <button class="tab" onclick="openTab('tab3')">Gilead Primus</button>
+            <button class="tab" onclick="openTab('tab4')">Ostia</button>
+            <button class="tab" onclick="openTab('tab5')">Enoch</button>
+            <button class="tab" onclick="openTab('tab6')">Vulkaris</button>
+            <button class="tab" onclick="openTab('tab7')">Troilus</button>
+        </div>
+
+        <div class="tab-content" id="tab1">
+            <img src="avachrus.png" alt="Avachrus forge" style="float: left; margin-right: 10px;">
+            <h2>Avachrus </h2>     
+            <h3>Classification: Forge World</h2>
+            <div id="avachrus"><</div>
+            <script>
+                loadFileContent('textfiles/planets/avachrus.txt','avachrus');
+            </script>
+        </div>
+        <div class="tab-content" id="tab2">
+            
+            <img src="nethreus.png" alt="Imperial Knight" style="float: left; margin-right: 10px;">
+            <h2>Nethreus</h2>
+            <h3>Classification: Death World</h2>
+            <div id="nethreus"></div>
+            <script>loadFileContent('textfiles/planets/nethreus.txt','nethreus');</script>
+        </div>
+        <div class="tab-content" id="tab3">
+            
+            <img src="textfiles/planets/gilead.png" alt="Gilead Image" style="float: left; margin-right: 10px;">
+            <h2>Gilead Primus</h2>
+            <h3>Classification: Hive World</h2>
+            <div id="gilead"></div>
+            <script>loadFileContent('textfiles/planets/nethreus.txt','gilead');</script>
+        </div>
+        <div class="tab-content" id="tab4">
+            
+            <img src="ostia.png" alt="Ostia" style="float: left; margin-right: 10px;">
+            <h2>Ostia</h2>
+            <h3>Classification: Agri World</h2>
+            <div id="ostia"></div>
+            <script>loadFileContent('textfiles/planets/ostia.txt','ostia');</script>
+        </div>
+        <div class="tab-content" id="tab5">
+            
+            <img src="enoch.png" alt="Enoch" style="float: left; margin-right: 10px;">
+            <h2>Enoch</h2>
+            <h3>Classification: Shrine World (Ocean World)</h2>
+            <div id="enoch"></div>
+            <script>loadFileContent('textfiles/planets/enoch.txt','enoch');</script>
+        </div>
+        <div class="tab-content" id="tab6">
+            
+            <img src="vulkaris.png" alt="Vulkaris" style="float: left; margin-right: 10px;">
+            <h2>Vulkaris</h2>
+            <h3>Classification: Death World</h2>
+            <div id="vulkaris"></div>
+            <script>loadFileContent('textfiles/planets/vulkaris.txt','vulkaris');</script>
+        </div>
+        <div class="tab-content" id="tab7">
+            
+            <img src="troilus.png" alt="Troilus" style="float: left; margin-right: 10px;">
+            <h2>Troilus</h2>
+            <h3>Classification: Former Hive World now Death World</h2>
+            <div id="troilus"></div>
+            <script>loadFileContent('textfiles/planets/troilus.txt','troilus');</script>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Wrath and Glory Campaign</p>
+    </footer>
+</body>
+</html>

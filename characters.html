@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Campaign - Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/loadFfile&Photo.js"></script>
+    <script src="scripts/loadCharacter.js" defer></script>
+    <script src="scripts/tabsscript.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <a href="create-character.html">
+        <button>Create Your Character</button>
+      </a>
+    <header class="header">
+        <h1>Characters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="tab-container">
+            <button class="tab" onclick="openTab('marines')">Absolvers</button>
+            <button class="tab" onclick="openTab('guard')">Guardsmen</button>
+            <button class="tab" onclick="openTab('inq')">Inquisition</button>
+            <button class="tab" onclick="openTab('sob')">Sisters of Battle</button>
+            <button class="tab" onclick="openTab('player')">Player Character</button>
+        </div>
+        
+        <div class="tab-content" id="guard">            
+            <script>
+                 // Load content for section 1
+                 loadItems('characters/characters.json', 'guard');
+            </script>
+        </div>
+        <div class="tab-content" id="player">
+            <label for="fileName">Enter Character Name:</label>
+            <input class="text" type="text" name="characterName" id="input" required>            
+            <button onclick="loadByName()">Load</button>
+            <script>
+                function loadByName(){
+                    var needed = document.getElementById('input').value;
+                    var jsonFilePath = 'characters/' + needed + '.json';
+                    loadCharacter(jsonFilePath, 'player');
+                }
+            </script>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Wrath and Glory Campaign</p>
+    </footer>
+</body>
+</html>

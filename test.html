@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add some basic styles for the image container */
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the enlarged image */
+        .enlarged {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120%; /* Adjust the size as needed */
+            height: 120%;
+            z-index: 1;
+            opacity: 0; /* Initially hide the enlarged image */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Style for the original image */
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Hover effect */
+        .image-container:hover .enlarged {
+            opacity: 1; /* Make the enlarged image visible on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image container with original and enlarged images -->
+<div class="image-container">
+    <img src="avachrus.png" alt="Your Image" onclick="redirectToIndex()">
+    <img class="enlarged" src="avachrus.png" alt="Your Image Enlarged" onclick="redirectToIndex()">
+</div>
+<div class="image-container">
+    <img src="avachrus.png" alt="Your Image" onclick="index.html">
+    <img class="enlarged" src="avachrus.png" alt="Your Image Enlarged">
+</div>
+<script>
+    function redirectToIndex() {
+        // Redirect to index.html
+        window.location.href = 'index.html';
+    }
+</script>
+</body>
+</html>

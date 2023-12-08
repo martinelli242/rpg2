@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Inferno Pistol",
+        "description": "A pistol sized melta gun, extremely anti armor",
+        "stats":"DMG: 16+1 ED | AP -4 | 3 | 6 | 9 | Salvo 1 | Melta, Pistol",
+         "keywords":"Adepta Sororitas, Adeptus Astartes, Imperium, Melta",
+         "photoURL": "items/meltagun.png"
+    },
+    {
+        "name": "Melta Gun",
+        "description": "Cuts through armor like it wasn't there",
+        "stats":"DMG: 16+1 ED | AP -4 | 6 | 12 | 18 | Salvo 1 | Melta, Assault",
+        "keywords":"Imperium, Melta",
+        "photoURL": "items/meltagun.png"
+    }
+]

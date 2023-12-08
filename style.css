@@ -1,0 +1,230 @@
+body {
+    /*background-color: #1A1A1A; /* Dark blue background */
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF; /* White text */
+    font-family: Inquisitor Regular;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: #FFD700; /* Golden color */
+    display: inline-block;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #FFD700;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Inquisitor Regular;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 40px;
+    color: #FFD700; /* Golden color */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Golden color */
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Add the following styles for tabs */
+.tab-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab {
+    background-color: #000000;
+    color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-family: Inquisitor Regular;
+    font-size: 20px;
+}
+
+.tab-content {
+    display: none;
+    color: #00ff11;
+    font-size: 20px;
+    text-align: left;
+    min-height: 1100px;
+}
+
+.tab-content.active {
+    display: block;
+    color: #FFD700;
+}
+
+@font-face {
+    font-family: 'Inquisitor Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inquisitor Regular'), url('Inquisitor.woff') format('woff');
+    }
+.text{
+    color:#00ff11;
+    font-size: 30px;
+}
+input[type="text"] {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 300px; /* Adjust the width as needed */
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #00000000;
+        color:#00ff11;
+        font-family: Inquisitor Regular;
+        font-size: 25px;
+    }
+input[type="number"] {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        width: 300px; /* Adjust the width as needed */
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #00000000;
+        color:#00ff11;
+        font-family: Inquisitor Regular;
+        font-size: 30px;
+    }
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border-color: #00ff11; /* Change the border color on hover or focus */
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    border-color: #00ff11; /* Change the border color on hover or focus */
+}
+textarea {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #00000000;
+    color:#00ff11;
+    font-family: Inquisitor Regular;
+    font-size: 30px;
+}
+textarea:hover,
+textarea:focus {
+border-color: #00ff11; /* Change the border color on hover or focus */
+}
+
+.submit{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #000000;
+    width: 200px;
+    color:#00ff11;
+    font-family: Inquisitor Regular;
+    font-size: 30px;
+    position: absolute;
+    float: left;
+    right: 0;
+}
+.submit:hover,
+.submit:focus {
+    border-color: #00ff11; /* Change the border color on hover or focus */
+}
+
+.general{
+    text-align: center;
+    color:#00ff11;
+    font-size : 30px;
+}
+
+.abilities{
+    display:flex;
+}
+
+.attributesAndTraits{
+    color:#00ff11;
+    flex: 1;
+    margin: 10px;
+    border: 5px solid #00ff11;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills{
+    margin-right: 15%;
+    color:#00ff11;
+    flex: 1;
+    margin: 10px;
+    border: 5px solid #00ff11;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.checkIn{
+    width:15%;
+    font-size: 30px;
+}
+
+#marek{
+    display:none;
+}
+
+#michal{
+    display:none;
+}
+
+#kuba{
+    display:none;
+}
+
+#filip{
+    display:none;
+}

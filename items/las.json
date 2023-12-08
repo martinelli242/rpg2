@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Laspistol",
+      "description": "Standarised Imperial Laspistol",
+      "stats":"DMG: 7+1 ED | AP 0 | 6 | 12 | 18 | Salvo 1 | Reliable, Pistol",
+      "keywords":"Imperium, Las",
+      "photoURL": "items/laspistol.png"
+    },
+    {
+      "name": "Hellpistol",
+      "description": "Different version of the Lastpistol with more power but less range",
+      "stats":"DMG: 7+1 ED | AP -2 | 3 | 6 | 9 | Salvo 1 | Reliable, Pistol",
+      "keywords":"Astra Militarum, Imperium, Las",
+      "photoURL": "items/hellpistol.png"
+    },
+    {
+      "name": "Master Crafter Laspistol",
+      "description": "Far better version of Laspistol, issued to officers only",
+      "stats":"DMG: 10+1 ED | AP 0 | 6 | 12 | 18 | Salvo 1 | Reliable, Pistol",
+      "keywords":"Imperium, Las",
+      "photoURL": "items/MClaspistol.png"
+    },
+    {
+      "name": "M36 Lasgun",
+      "description": "Standard Lasgun issued to guardsmen, mass produced and deadly",
+      "stats":"DMG: 7+1 ED | AP 0 | 12 | 24 | 36 | Salvo 2 | Reliable, Rapid Fire(1)",
+      "keywords":"Astra Militarum, Imperium, Las",
+      "photoURL": "items/m36_lasgun.png"
+    },
+    {
+      "name": "Modded M36 Lasgun",
+      "description": "Modded version of the standard Lasgun, used by veterans and officers",
+      "stats":"DMG: 7+1 ED | AP 0 | 12 | 24 | 36 | Salvo 2 | Reliable, Rapid Fire(1) | Different Upgrades",
+      "keywords":"Astra Militarum, Imperium, Las",
+      "photoURL": "items/m36modded.png"
+    },
+    {
+      "name": "Hellgun",
+      "description": "Kasrkin issue lasgun able to level enemies in short time",
+      "stats":"DMG: 7+1 ED | AP -2 | 9 | 18 | 27 | Salvo 2 | Reliable, Rapid Fire(1)",
+      "keywords":"Astra Militarum, Imperium, Las",
+      "photoURL": "items/hellgun.png"
+    }
+]
+  

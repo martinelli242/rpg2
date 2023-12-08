@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Campaign - Maps</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add a link to the CSS file -->
+    <script src="scripts/tabsscript.js" defer></script> <!-- Add a link to the JavaScript file -->
+</head>
+<body>
+    <a href="create-character.html">
+        <button>Create Your Character</button>
+      </a>
+    <header class="header">
+        <h1>Maps</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="tab-container">
+            <button class="tab" onclick="openTab('map1')">Gilead System</button>
+            <button class="tab" onclick="openTab('map2')">Map 2</button>
+            <!-- Add more buttons for additional maps as needed -->
+        </div>
+
+        <div class="tab-content" id="map1">
+            <!-- Content for Map 1 -->
+            <h2>Gilead System</h2>
+            <img src="gilead.png" alt="Gilead system map">
+        </div>
+
+        <div class="tab-content" id="map2">
+            <!-- Content for Map 2 -->
+            <h2>Map 2</h2>
+            <!-- Add the image or content for Map 2 here -->
+        </div>
+
+        <!-- Add more tab-content sections for additional maps as needed -->
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Wrath and Glory Campaign</p>
+    </footer>
+</body>
+</html>

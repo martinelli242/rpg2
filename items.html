@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Campaign - Items</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/loadFfile&Photo.js"></script>
+    <script src="scripts/tabsscript.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <a href="create-character.html">
+        <button>Create Your Character</button>
+      </a>
+    <header class="header">
+        <h1>Items</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="characters.html">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="tab-container">
+            <button class="tab" onclick="openTab('bolt')">Bolt Weapons</button>
+            <button class="tab" onclick="openTab('las')">Las Weapons</button>
+            <button class="tab" onclick="openTab('plasma')">Plasma Weapons</button>
+            <button class="tab" onclick="openTab('term')">Melta Weapons</button>
+            <button class="tab" onclick="openTab('proj')">Projectile Weapons</button>
+            <button class="tab" onclick="openTab('fire')">Flame Weapons</button>
+            <button class="tab" onclick="openTab('mechanicus')">Adeptus Mechanicus Weapons</button>
+            <button class="tab" onclick="openTab('grenades')">Grenades and Launcher Weapons</button>
+        </div>
+
+        <div class="tab-content" id="bolt"></div>
+
+            <script>
+                 loadItems('items/bolt.json', 'bolt');
+
+             </script>
+
+        <div class="tab-content" id="las"></div>
+            
+            <script>
+                 loadItems('items/las.json', 'las');
+    
+              </script>
+        <div class="tab-content" id="plasma"></div>
+            
+        <script>
+             loadItems('items/plas.json', 'plasma');
+
+          </script>
+        <div class="tab-content" id="term"></div>
+            
+        <script>
+            loadItems('items/melta.json', 'term');
+   
+        </script>
+        <div class="tab-content" id="fire"></div>
+            
+        <script>
+            loadItems('items/flame.json', 'fire');
+   
+        </script>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Wrath and Glory Campaign</p>
+    </footer>
+</body>
+</html>
