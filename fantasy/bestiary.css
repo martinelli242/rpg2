@@ -1,0 +1,23 @@
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .item {
+      color: #dbf419; /* Golden color */
+      text-decoration: none;
+      background-color: rgb(0, 0, 0);
+      border-radius: 15px;
+      border: 15px ridge goldenrod;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .item-info {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+    }

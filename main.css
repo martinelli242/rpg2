@@ -1,0 +1,56 @@
+body {
+    background-image: url('epicBackground.png');
+    background-color: #1357a9;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    color: #FFFFFF; /* White text */
+    margin: 0;
+    bottom: 15%;
+    min-height: 100vh;
+}     
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    transition: transform 0.3s ease; /* Add smooth transition */
+    width: 30%;
+
+}
+
+.image-container img:hover {
+     transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+img {
+    max-width: 100%;
+}
+
+.rpgimage{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Playball;
+}
+
+@font-face {
+    font-family: 'Playball';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playball'), url('Playball-Regular.woff') format('woff');
+    }

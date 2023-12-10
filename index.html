@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG Campaign Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <a href="create-character.html">
-        <button>Create Your Character</button>
-    </a>
-    <header class="header">
-        <img src="w&gLogo.png" alt="Wrath and Glory Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="planets.html">Planets</a></li>
-                <li><a href="maps.html">Maps</a></li>
-                <li><a href="items.html">Items</a></li>
-                <li><a href="characters.html">Characters</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="content">
-        <p id="marek">nie wiem co to</p>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2023 Wrath and Glory Campaign</p>
-    </footer>
+<header class="header">
+    <h1>Choose your RPG</h1>
+</header>
+    <div class="image-container">
+        <img class="rpgimage" src="wh40k/w&gLogo.png" alt="Your Image" onclick="redirectTo40k()">
+        <img class="rpgimage" src="dungeonGamelogo.png" alt="Your Image" onclick="redirectToFantasy()">
+    </div>
+    <div class="image-container">
+        <img class="rpgimage" src="mouselogo.png" alt="Your Image" onclick="redirectToIndex()">
+        <img class="rpgimage" src="Gothiclogo.png" alt="Your Image" onclick="redirectToGothic()">
+    </div>
+
+<script>
+    function redirectTo40k() {
+        window.location.href = 'wh40k/index.html';
+    }
+    function redirectToFantasy() {
+        window.location.href = 'fantasy/index.html';
+    }
+    function redirectToGothic() {
+        window.location.href = 'gothic/index.html';
+    }
+</script>
+
+<footer class="footer">
+    <p>&copy; 2023 Rpg Campaigns</p>
+</footer>
 </body>
 </html>

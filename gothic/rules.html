@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothic RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bestiary.css">
+    <script src="scripts/loadFile.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="Gothiclogo.png" alt="Gothic Logo" >
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Powrót</a></li>
+                <li><a href="createCharacter.html">Tworzenie Postaci</a></li>
+                <li><a href="abilities.html">Umiejętności i Talenty</a></li>
+                <li><a href="rules.html">Zasady</a></li>
+                <li><a href="bestiary.html">Bestiariusz</a></li>
+                <li><a href="equipment.html">Ekwipunek</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div>
+            <h2 class="myheader" >Zasady</h2>
+        </div>
+        <div class="talents" id="rules">
+            <script>
+                loadFile('rules.json','rules');
+            </script>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Gothic RPG</p>
+    </footer>
+</body>
+</html>
